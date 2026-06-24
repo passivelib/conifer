@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1080 1080"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="mstudio-doc.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.75462963"
+     inkscape:cx="540"
+     inkscape:cy="540"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <title
+     id="title">MStudio MOS transistor icon</title>
+  <desc
+     id="desc">A circular green tool icon containing a white MOS transistor circuit symbol.</desc>
+  <circle
+     cx="540"
+     cy="540"
+     r="500"
+     fill="#54b435"
+     id="circle1" />
+  <circle
+     cx="540"
+     cy="540"
+     r="456"
+     fill="none"
+     stroke="#ffffff"
+     stroke-opacity="0.22"
+     stroke-width="22"
+     id="circle2" />
+  <g
+     transform="matrix(4.4,0,0,4.4,127.94356,113.22577)"
+     stroke="#ffffff"
+     stroke-width="5"
+     stroke-linejoin="round"
+     id="g7">
+    <g
+       fill="none"
+       stroke-linecap="round"
+       id="g4">
+      <path
+         d="m 136,121 v 45"
+         id="path2" />
+      <path
+         d="M 61,46 V 146"
+         id="path3" />
+      <path
+         d="M 81,46 V 146"
+         id="path4" />
+    </g>
+    <g
+       fill="none"
+       stroke-linecap="square"
+       id="g6">
+      <path
+         d="M 56,91 H 26"
+         id="path5" />
+      <path
+         d="m 81,66 h 55 V 31"
+         id="path6" />
+    </g>
+    <path
+       d="m 81,121 h 35 m 20,0 -20,7.5 v -15 l 20,7.5"
+       fill="#ffffff"
+       stroke-linecap="square"
+       id="path7" />
+  </g>
+</svg>

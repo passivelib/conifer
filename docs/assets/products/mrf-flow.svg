@@ -1,11 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1560" role="img" aria-labelledby="title desc">
-  <title id="title">Conifer Design Flow and MRF synthesis</title>
-  <desc id="desc">Vertical flow diagram. MCELL, EM simulation and MMOD produce M-MODELS. MRF then combines M-MODELS with design goals to produce an optimized matching network.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2 2 L10 6 L2 10 Z" fill="#2f67c7"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 1560"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="mrf-flow.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0448718"
+     inkscape:cx="714.44172"
+     inkscape:cy="1270.4908"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <title
+     id="title">Conifer Design Flow and MRF synthesis</title>
+  <desc
+     id="desc">Vertical flow diagram. MCELL, EM simulation and MMOD produce M-MODELS. MRF then combines M-MODELS with design goals to produce an optimized matching network.</desc>
+  <defs
+     id="defs1">
+    <marker
+       id="arrow"
+       markerWidth="12"
+       markerHeight="12"
+       refX="10"
+       refY="6"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M2 2 L10 6 L2 10 Z"
+         fill="#2f67c7"
+         id="path1" />
     </marker>
-    <style>
+    <style
+       id="style1">
       text{font-family:Poppins,Arial,sans-serif}
       .bg{fill:#f8fff4}
       .panel{fill:#fff;stroke:#d5ead8;stroke-width:2;rx:22}
@@ -20,68 +64,277 @@
       .body{font-size:18px;font-weight:500;fill:#5d735d}
     </style>
   </defs>
-
-  <rect class="bg" width="1000" height="1560"/>
-  <text x="500" y="55" text-anchor="middle" class="title">Conifer Design Flow</text>
-
-  <rect x="120" y="90" width="760" height="920" class="panel"/>
-  <text x="500" y="132" text-anchor="middle" class="sectionTitle">Generate parametric M-MODELS</text>
-
-  <rect x="300" y="175" width="400" height="78" class="box"/>
-  <text x="500" y="206" text-anchor="middle" class="head">Passive component configurations</text>
-  <text x="500" y="231" text-anchor="middle" class="body">type, geometry, shield, sweeps</text>
-
-  <line x1="500" y1="253" x2="500" y2="292" class="line"/>
-
-  <rect x="390" y="300" width="220" height="74" class="tool"/>
-  <text x="500" y="347" text-anchor="middle" class="toolText">MCELL</text>
-
-  <line x1="500" y1="374" x2="500" y2="413" class="line"/>
-
-  <rect x="260" y="421" width="480" height="84" class="output"/>
-  <text x="500" y="455" text-anchor="middle" class="head">DRC-clean GDS component library</text>
-  <text x="500" y="481" text-anchor="middle" class="body">layouts for generated geometries</text>
-
-  <line x1="500" y1="505" x2="500" y2="544" class="line"/>
-
-  <rect x="340" y="552" width="320" height="74" class="box"/>
-  <text x="500" y="599" text-anchor="middle" class="head">EM simulation</text>
-
-  <line x1="500" y1="626" x2="500" y2="665" class="line"/>
-
-  <rect x="260" y="673" width="480" height="84" class="output"/>
-  <text x="500" y="707" text-anchor="middle" class="head">Network parameters</text>
-  <text x="500" y="733" text-anchor="middle" class="body">Y-parameters from electromagnetic simulation</text>
-
-  <line x1="500" y1="757" x2="500" y2="796" class="line"/>
-
-  <rect x="390" y="804" width="220" height="74" class="tool"/>
-  <text x="500" y="851" text-anchor="middle" class="toolText">MMOD</text>
-
-  <line x1="500" y1="878" x2="500" y2="917" class="line"/>
-
-  <rect x="320" y="925" width="360" height="64" class="output"/>
-  <text x="500" y="966" text-anchor="middle" class="head">M-MODELS</text>
-
-  <rect x="120" y="1035" width="760" height="505" class="panel"/>
-  <text x="500" y="1077" text-anchor="middle" class="sectionTitle">Synthesize matching network with MRF</text>
-
-  <rect x="300" y="1120" width="400" height="74" class="box"/>
-  <text x="500" y="1151" text-anchor="middle" class="head">Design goals</text>
-  <text x="500" y="1176" text-anchor="middle" class="body">targets and constraints</text>
-
-  <line x1="500" y1="1194" x2="500" y2="1230" class="line"/>
-
-  <rect x="320" y="1238" width="360" height="64" class="output"/>
-  <text x="500" y="1279" text-anchor="middle" class="head">M-MODELS</text>
-
-  <line x1="500" y1="1302" x2="500" y2="1338" class="line"/>
-
-  <rect x="420" y="1346" width="160" height="66" class="tool"/>
-  <text x="500" y="1388" text-anchor="middle" class="toolText">MRF</text>
-
-  <line x1="500" y1="1412" x2="500" y2="1448" class="line"/>
-
-  <rect x="275" y="1456" width="450" height="64" class="output"/>
-  <text x="500" y="1497" text-anchor="middle" class="head">Optimized matching network</text>
+  <rect
+     class="bg"
+     width="1000"
+     height="1560"
+     id="rect1" />
+  <text
+     x="500"
+     y="55"
+     text-anchor="middle"
+     class="title"
+     id="text1">Conifer Design Flow</text>
+  <rect
+     x="120"
+     y="90"
+     width="760"
+     height="920"
+     class="panel"
+     id="rect2" />
+  <text
+     x="500"
+     y="132"
+     text-anchor="middle"
+     class="sectionTitle"
+     id="text2">Generate parametric M-MODELS</text>
+  <rect
+     x="300"
+     y="175"
+     width="400"
+     height="78"
+     class="box"
+     id="rect3" />
+  <text
+     x="500"
+     y="206"
+     text-anchor="middle"
+     class="head"
+     id="text3">Passive component configurations</text>
+  <text
+     x="500"
+     y="231"
+     text-anchor="middle"
+     class="body"
+     id="text4">type, geometry, shield, sweeps</text>
+  <line
+     x1="500"
+     y1="253"
+     x2="500"
+     y2="292"
+     class="line"
+     id="line4" />
+  <rect
+     x="390"
+     y="300"
+     width="220"
+     height="74"
+     class="tool"
+     id="rect4" />
+  <text
+     x="500"
+     y="347"
+     text-anchor="middle"
+     class="toolText"
+     id="text5">MCELL</text>
+  <line
+     x1="500"
+     y1="374"
+     x2="500"
+     y2="413"
+     class="line"
+     id="line5" />
+  <rect
+     x="260"
+     y="421"
+     width="480"
+     height="84"
+     class="output"
+     id="rect5" />
+  <text
+     x="500"
+     y="455"
+     text-anchor="middle"
+     class="head"
+     id="text6">DRC-clean GDS component library</text>
+  <text
+     x="500"
+     y="481"
+     text-anchor="middle"
+     class="body"
+     id="text7">layouts for generated geometries</text>
+  <line
+     x1="500"
+     y1="505"
+     x2="500"
+     y2="544"
+     class="line"
+     id="line7" />
+  <rect
+     x="340"
+     y="552"
+     width="320"
+     height="74"
+     class="box"
+     id="rect7" />
+  <text
+     x="500"
+     y="599"
+     text-anchor="middle"
+     class="head"
+     id="text8">EM simulation</text>
+  <line
+     x1="500"
+     y1="626"
+     x2="500"
+     y2="665"
+     class="line"
+     id="line8" />
+  <rect
+     x="260"
+     y="673"
+     width="480"
+     height="84"
+     class="output"
+     id="rect8" />
+  <text
+     x="500"
+     y="707"
+     text-anchor="middle"
+     class="head"
+     id="text9">Network parameters</text>
+  <text
+     x="500"
+     y="733"
+     text-anchor="middle"
+     class="body"
+     id="text10">Y-parameters from electromagnetic simulation</text>
+  <line
+     x1="500"
+     y1="757"
+     x2="500"
+     y2="796"
+     class="line"
+     id="line10" />
+  <rect
+     x="390"
+     y="804"
+     width="220"
+     height="74"
+     class="tool"
+     id="rect10" />
+  <text
+     x="500"
+     y="851"
+     text-anchor="middle"
+     class="toolText"
+     id="text11">MMOD</text>
+  <line
+     x1="500"
+     y1="878"
+     x2="500"
+     y2="917"
+     class="line"
+     id="line11" />
+  <rect
+     x="320"
+     y="925"
+     width="360"
+     height="64"
+     class="output"
+     id="rect11" />
+  <text
+     x="500"
+     y="966"
+     text-anchor="middle"
+     class="head"
+     id="text12">M-MODELS</text>
+  <rect
+     x="120"
+     y="1035"
+     width="760"
+     height="505"
+     class="panel"
+     id="rect12" />
+  <text
+     x="500"
+     y="1077"
+     text-anchor="middle"
+     class="sectionTitle"
+     id="text13">Synthesize matching network with MRF</text>
+  <rect
+     x="267.45798"
+     y="1149.6519"
+     width="204.05298"
+     height="69.232086"
+     class="box"
+     id="rect13" />
+  <text
+     x="363.22461"
+     y="1180.9749"
+     text-anchor="middle"
+     class="head"
+     id="text14">Design goals</text>
+  <text
+     x="363.22461"
+     y="1205.9749"
+     text-anchor="middle"
+     class="body"
+     id="text15">targets and constraints</text>
+  <line
+     x1="449.84561"
+     y1="1219.65"
+     x2="449.84561"
+     y2="1313.424"
+     class="line"
+     id="line15"
+     inkscape:transform-center-x="25.840491"
+     inkscape:transform-center-y="13.952591" />
+  <rect
+     x="538.22607"
+     y="1151.2213"
+     width="167.47734"
+     height="64.316292"
+     class="output"
+     id="rect15" />
+  <text
+     x="789.22125"
+     y="941.00507"
+     text-anchor="middle"
+     class="head"
+     id="text16"
+     transform="scale(0.78918257,1.2671339)"
+     style="stroke-width:0.789183">M-MODELS</text>
+  <line
+     x1="553.21381"
+     y1="1216.2554"
+     x2="553.21381"
+     y2="1313.424"
+     class="line"
+     id="line16" />
+  <rect
+     x="419.98038"
+     y="1313.424"
+     width="160.03923"
+     height="64.152756"
+     class="tool"
+     id="rect16" />
+  <text
+     x="492.89279"
+     y="1373.7759"
+     text-anchor="middle"
+     class="toolText"
+     id="text17"
+     transform="scale(1.0144194,0.98578556)"
+     style="stroke-width:0.986027">MRF</text>
+  <line
+     x1="500"
+     y1="1377.5768"
+     x2="500"
+     y2="1456"
+     class="line"
+     id="line17" />
+  <rect
+     x="275"
+     y="1456"
+     width="450"
+     height="64"
+     class="output"
+     id="rect17" />
+  <text
+     x="500"
+     y="1497"
+     text-anchor="middle"
+     class="head"
+     id="text18">Optimized matching network</text>
 </svg>
