@@ -21,3 +21,5 @@ GitHub Pages should publish this site from the `docs/` folder on the default bra
    - `Source`: `Deploy from a branch`
    - `Branch`: `main`
    - `Folder`: `/docs`
+
+Do not add a custom domain while testing. GitHub Pages will publish the site at the default `github.io` URL.
