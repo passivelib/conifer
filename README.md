@@ -36,4 +36,4 @@ If you run the server on a remote machine, open `http://<remote-host>:8000/` or 
    - `Branch`: `main`
    - `Folder`: `/docs`
 
-Do not add a custom domain while testing. GitHub Pages will publish the site at the default `github.io` URL.
+This site is configured for the custom domain `coniferelectronics.com` via `docs/CNAME`.
