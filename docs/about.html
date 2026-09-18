@@ -165,8 +165,8 @@ and with greater confidence.</h2> </div>
  <p class=short-bio>
  Dr. Milenko Milicevic has 13 years of professional experience in analog/RF IC design. His technical background mostly focuses on high-frequency integrated circuits for mm-wave radar and communication systems.
  </p>
- <a href=# class=read-more>Read more</a>
- <p class="full-bio hidden sf-hidden">
+ <button type="button" class="read-more" aria-expanded="false" aria-controls="full-bio-1">Read more</button>
+ <p id="full-bio-1" class="full-bio" hidden>
  Since 2012. he has been working at TES Electronic Solutions GmbH as an R&amp;D senior design engineer and system architekt in the analog/RF design team, where he participated in the design of:
 MB-OFDM UWB (3.1 – 10.6 GHz) transceiver chipset for professional applications.
 UWB low power, low data rate (3.1 – 10.6 GHz) transceiver chipset for sensor networks.
@@ -187,8 +187,8 @@ Milenko received his B.Sc., M.Sc., and Ph.D. degrees from the School of Electric
  Dr.-Ing. Milan Babic has been working in both academia and industry, with over 13
 years of professional experience in the field of RF, analog and mixed-signal ICs.
  </p>
- <a href=# class=read-more>Read more</a>
- <p class="full-bio hidden sf-hidden">
+ <button type="button" class="read-more" aria-expanded="false" aria-controls="full-bio-2">Read more</button>
+ <p id="full-bio-2" class="full-bio" hidden>
  He obtained his B.Sc. and M.Sc. degrees from the School of Electrical
 Engineering, University of Belgrade, Serbia, in 2010 and 2013, respectively.
 He started his career in industry and from 2012 to 2014 he worked on
@@ -211,8 +211,8 @@ automotive electronics as an ASIC engineer.
  <p class=short-bio>
  Dr. Jovan Marković is an entrepreneur and management expert (PhD in Sports Management). He founded the successful "Prestiz" Grammar School and acts as a consultant for the VoiceToys start-up, driving its expansion across the Western Balkans. He is a former national badminton champion.
  </p>
- <a href=# class=read-more>Read more</a>
- <p class="full-bio hidden sf-hidden">
+ <button type="button" class="read-more" aria-expanded="false" aria-controls="full-bio-3">Read more</button>
+ <p id="full-bio-3" class="full-bio" hidden>
 Dr. Jovan Marković is an experienced entrepreneur, business consultant, and management expert. He holds a Doctorate in Sports Management from the Faculty of Management in Sport, Alfa University, Belgrade.
 His entrepreneurial success includes being the founder and first director of the "Prestiz" Sports and IT Grammar School in Belgrade. He successfully led all preparatory activities and positioned the school in the market. In just two years of operation, the gymnasium enrolled over 100 students.
 He is also an active business consultant and a team member for the "VoiceToys" start-up. Dr. Marković was instrumental in developing the product from the MVP (Minimum Viable Product) phase to successfully expanding and acquiring dozens of clients across the Western Balkans region, with a tendency toward further growth.
@@ -320,3 +320,30 @@ In sports, he was a multiple champion of the FR Yugoslavia in badminton in singl
  
 <template id=d6fe9c24159ed4a27d224d91c70f8fdc></template>
 <span id=elementor-device-mode class=elementor-screen-only></span><svg style=display:none class=e-font-icon-svg-symbols></svg>
+<style>
+.team-member .read-more {
+ background: transparent;
+ border: 0;
+ padding: 0;
+ font-family: inherit;
+ line-height: inherit;
+ cursor: pointer;
+ color: #1d5c4c;
+}
+.team-member .read-more:focus-visible {
+ outline: 2px solid #1d5c4c;
+ outline-offset: 4px;
+}
+.full-bio[hidden] { display: none !important; }
+</style>
+<script>
+document.querySelectorAll('.team-member .read-more').forEach(function (button) {
+ const biography = document.getElementById(button.getAttribute('aria-controls'));
+ button.addEventListener('click', function () {
+  const expanded = button.getAttribute('aria-expanded') === 'true';
+  biography.hidden = expanded;
+  button.setAttribute('aria-expanded', String(!expanded));
+  button.textContent = expanded ? 'Read more' : 'Read less';
+ });
+});
+</script>
